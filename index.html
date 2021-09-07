@@ -14,75 +14,54 @@
 </head>
 
 <body class="container-fluid">
-    <header>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="fixed-top">
-                    <div class="collapse" id="navbarToggleExternalContent">
-                        <div class="bg-dark p-4">
-                            <h5 class="text-white h4">Collapsed content</h5>
-                            <span class="text-muted"><a href=""><img src="./ImgProyu/Spoty.jpg" alt="Spot" width="100px" height="100px"></a></span>
-                        </div>
-                    </div>
-                    <nav class="navbar navbar-dark bg-dark">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="container mt-5">
+    <header class="vacio">
+        <div class="menu">
             <div class="row">
                 <div class="col-md-12">
-                    <center>
-                        <img src="./ImgProyu/eva01.jpg" alt="" class="mt-5 " width="500px" height="500px">
-                    </center>
-                </div>
-                <div class="col-md-12 mt-5">
-                    <p> Soy juan camilo giraldo estudiante de desarrollo de software en el cesde, estoy cursando el tercer semestre. Una muestra de los temas que domino de este mundo del desarrollo y del diseño web...
-                    </p>
+                    <div class="fixed">
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="bg-transparent p-4">
+                                <a href="#cursos">
+                                    <h5>curso</h5>
+                                </a>
+                                <h5 class="text-white h4">Collapsed content</h5>
+                                <span class="text-muted"><a href=""><img src="./ImgProyu/Spoty.jpg" alt="Spot" width="100px" height="100px"></a></span>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-dark bg-transparent">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="container mt-5">
-                <div class="card-deck">
-                    <div class="card text-white bg-secondary mb-3 border-secondary mb-3">
-                        <img src="./ImgProyu/mongodb.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
+
+        </div>
+        </div>
+
+    </header>
+    <main class="info">
+        <div class="curso">
+
+            <section class="container mt-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <center>
+                            <img src="./ImgProyu/eva01.jpg" alt="" class="mt-5 " width="500px" height="500px">
+                        </center>
                     </div>
-                    <div class="card text-white bg-danger mb-3 border-danger mb-3">
-                        <img src="./ImgProyu/java.jpg " class="card-img-top " alt="... ">
-                        <div class="card-body ">
-                            <h5 class="card-title ">Card title</h5>
-                            <p class="card-text ">This card has supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                        <div class="card-footer ">
-                            <small class="text-muted ">Last updated 3 mins ago</small>
-                        </div>
+                    <div class="col-md-12 mt-5">
+                        <p> Soy juan camilo giraldo estudiante de desarrollo de software en el cesde, estoy cursando el tercer semestre. Una muestra de los temas que domino de este mundo del desarrollo y del diseño web...
+                        </p>
                     </div>
-                    <div class="card text-white bg-warning mb-3 border-warning mb-3 ">
-                        <img src="./ImgProyu/javascript.png " class="card-img-top mt-1 " alt="... ">
-                        <div class="card-body ">
-                            <h5 class="card-title ">Card title</h5>
-                            <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        </div>
-                        <div class="card-footer ">
-                            <small class="text-muted ">Last updated 3 mins ago</small>
-                        </div>
-                    </div>
+                </div>
+            </section>
+            <section id="cursos">
+                <div class="container mt-5">
                     <div class="card-deck">
-                        <div class="card text-white bg-success mb-3 border-success mb-3">
-                            <img src="./ImgProyu/node.jpg" class="card-img-top" alt="...">
+                        <div class="card text-white bg-secondary mb-3 border-secondary mb-3">
+                            <img src="./ImgProyu/mongodb.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -91,38 +70,73 @@
                                 <small class="text-muted">Last updated 3 mins ago</small>
                             </div>
                         </div>
-                        <div class="card text-white bg-info mb-3 border-info mb-3 ">
-                            <img src="./ImgProyu/php-2.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <div class="card text-white bg-danger mb-3 border-danger mb-3">
+                            <img src="./ImgProyu/java.jpg " class="card-img-top " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+                                <p class="card-text ">This card has supporting text below as a natural lead-in to additional content.</p>
                             </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                            <div class="card-footer ">
+                                <small class="text-muted ">Last updated 3 mins ago</small>
                             </div>
                         </div>
-                        <div class="card text-white bg-dark mb-3 border-dark mb-3">
-                            <img src="./ImgProyu/sql-cover-blog.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <div class="card text-white bg-warning mb-3 border-warning mb-3 ">
+                            <img src="./ImgProyu/javascript.png " class="card-img-top mt-1 " alt="... ">
+                            <div class="card-body ">
+                                <h5 class="card-title ">Card title</h5>
+                                <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                             </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                            <div class="card-footer ">
+                                <small class="text-muted ">Last updated 3 mins ago</small>
+                            </div>
+                        </div>
+                        <div class="card-deck">
+                            <div class="card text-white bg-success mb-3 border-success mb-3">
+                                <img src="./ImgProyu/node.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card text-white bg-info mb-3 border-info mb-3 ">
+                                <img src="./ImgProyu/php-2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                            <div class="card text-white bg-dark mb-3 border-dark mb-3">
+                                <img src="./ImgProyu/sql-cover-blog.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <footer>
-            <center class="mt-5">
-                <p>Sigueme en redes sociales</p>
-                <a href=""><i class="fab fa-facebook"></i></a>
-                <a href=""><i class="fab fa-instagram-square"></i></a>
-                <a href=""><i class="fab fa-github"></i></a>
-            </center>
-        </footer>
+            </section>
+            <footer class="">
+                <center class="mt-5">
+                    <p>Sigueme en redes sociales</p>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                </center>
+            </footer>
+
+        </div>
+
+
     </main>
 
     <!-- Optional JavaScript; choose one of the two! -->
