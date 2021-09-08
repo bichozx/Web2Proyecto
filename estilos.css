@@ -6,9 +6,11 @@
 
 body {
     background-image: url(./ImgProyu/eva02.jpg);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
+    height: 100%;
 }
 
 .vacio {
@@ -28,6 +30,12 @@ body {
 
 .curso {
     margin: auto;
-    width: 960px;
+    width: 90%;
     height: 1000px;
+}
+
+.red {
+    margin: auto;
+    width: 30%;
+    height: 100px;
 }
