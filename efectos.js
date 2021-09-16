@@ -5,22 +5,27 @@ window.addEventListener('load', function() {
     const body = document.querySelector('body');
 
     const imag = [
-        'url("./ImgProyu/eva02.jpg")',
         'url("./ImgProyu/eva10.jpg")',
         'url("./ImgProyu/eva12.jpg")',
         'url("./ImgProyu/eva13.jpg")',
+        'url("./ImgProyu/eva15.jpg")',
+        'url("./ImgProyu/eva16.jpg")',
+        'url("./ImgProyu/eva17.png")',
+        'url("./ImgProyu/eva18.jpg")',
+        'url("./ImgProyu/eva19.png")',
+        'url("./ImgProyu/eva20.jpg")',
     ];
-    const salida = 0;
 
 
     function cambio() {
 
-        const bg = imag[Math.floor(Math.random() * imag.length)]
+        const bg = imag[Math.floor(Math.random() * imag.length)];
         body.style.backgroundImage = bg;
 
     }
 
-    setTimeout(cambio, 2000);
+
+    setTimeout(cambio, 1000);
 
 
 
