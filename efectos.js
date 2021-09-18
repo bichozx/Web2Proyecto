@@ -28,6 +28,38 @@ window.addEventListener('load', function() {
     setTimeout(cambio, 1000);
 
 
-
-
 })
+
+
+
+let arriba = document.getElementById('irarriba');
+arriba.addEventListener("click", up);
+
+function up() {
+
+    let subir = document.documentElement.scrollTop;
+
+    if (subir > 0) {
+
+        window.requestAnimationFrame(up);
+        window.scrollTo(0, subir - (up / 10))
+    }
+
+
+}
+
+let boton = document.getElementById('irarriba');
+
+window.onscroll = function() {
+
+    let scroll = document.documentElement.scrollTop;
+
+    if (scroll > 100) {
+
+        boton.style.transform = "scale(1)";
+
+    } else if (scroll < 100) {
+        boton.style.transform = "scale(0)";
+
+    }
+}
