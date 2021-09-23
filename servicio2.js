@@ -94,11 +94,11 @@ function pintarDatos(datos) {
         audio.src = cancion.preview_url;
 
         //crear titulo
-        let titulo = document.createElement("h1")
+        let titulo = document.createElement("h3")
         titulo.classList.add("card-title")
         titulo.textContent = cancion.name
 
-        let popularidad = document.createElement("p")
+        let popularidad = document.createElement("h6")
         popularidad.classList.add("card-text")
         popularidad.textContent = "popularidad " + "...." + cancion.popularity;
 
