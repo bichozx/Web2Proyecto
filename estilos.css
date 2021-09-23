@@ -58,15 +58,16 @@ p {
 }
 
 #irarriba {
-    display: inline-block;
+    display: flex;
     border-radius: 50%;
-    padding: 20px;
-    background: blue;
+    padding: 5px;
+    background: red;
     cursor: pointer;
     position: fixed;
     bottom: 20px;
     right: 20px;
     transition: all 300ms ease;
+    transform: scale(0);
 }
 
 #irarriba:hober {

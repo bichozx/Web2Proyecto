@@ -1,104 +1,3 @@
-/*let uri = "https://accounts.spotify.com/api/token";
-
-let dato1 = "grant_type=client_credentials";
-let dato2 = "Client ID f15cf36c512b4142bac0ac07aeb5b8cd";
-let dato3 = "Client Secret 494d6d2c90d640f6846fb775d96c3876";
-
-let parametrosPeticion = {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/x-www-form-urlencoded "
-    },
-    body: dato1 + "&" + dato2 + "&" + dato3
-
-
-}
-
-fetch(uri, parametrosPeticion)
-    .then(function(respuesta) {
-        return (respuesta.json())
-    })
-    .then(function(respuesta) {
-        console.log(respuesta)
-        obtenerToken(respuesta)
-    })
-    .catch(function(error) {
-        console.log(error)
-    })
-
-function obtenerToken(datos) {
-
-    let token = datos.token_type + " " + datos.access_token
-    console.log(token)
-    pedirCanciones(token)
-}
-
-function pedirCanciones(token) {
-    let uri = "https://api.spotify.com/v1/artists/4vhNDa5ycK0ST968ek7kRr/top-tracks?market=us"
-
-
-    let parametrosPeticion = {
-        method: "GET",
-        headers: {
-            Authorization: token
-        }
-    }
-
-
-    fetch(uri, parametrosPeticion)
-        .then(function(respuesta) {
-            return (respuesta.json());
-        })
-
-    .then(function(respuesta) {
-        console.log(respuesta); //objeto
-        pintarDatos(respuesta.tracks);
-
-    }).catch(function(error) {
-        console.log(error);
-    })
-
-    function pintarDatos(datos) {
-        let fila = document.getElementById("fila");
-        datos.forEach(function(cancion) {
-
-            let columna = document.createElement("div");
-            columna.classList.add("col")
-
-            let tarjeta = document.createElement("div");
-            tarjeta.classList.add("card")
-            tarjeta.classList.add("h-100")
-
-            let imagen = document.createElement("img");
-            imagen.classList.add("card-img-top");
-            imagen.src = cancion.album.images[0].url;
-
-
-
-            let titulo = document.createElement("h1");
-            titulo.textContent = cancion.name
-
-            //audio
-            let audio = document.createElement("audio")
-            audio.classList.add("w-100");
-            audio.setAttribute("controls", "controls")
-            audio.src = cancion.preview_url;
-
-            //padres e hijos
-
-            tarjeta.appendChild(imagen)
-            tarjeta.appendChild(titulo)
-            tarjeta.appendChild(audio)
-
-            columna.appendChild(tarjeta)
-            fila.appendChild(columna)
-
-        })
-
-    }
-}*/
-
-
 let uri = "https://accounts.spotify.com/api/token";
 
 let dato1 = "grant_type=client_credentials";
@@ -167,6 +66,7 @@ function pintarDatos(datos) {
     datos.tracks.forEach(function(cancion) {
         console.log(cancion.name)
         console.log(cancion.preview_url)
+        console.log(cancion.popularity)
         console.log(cancion.album.images[0].url)
 
         //crear un div con js
@@ -183,17 +83,35 @@ function pintarDatos(datos) {
         imagen.classList.add("card-img-top")
         imagen.src = cancion.album.images[0].url
 
+        //div para el titulo y audio
+        let tit = document.createElement("div")
+        tit.classList.add("card-body")
+
         //creo un audio
         let audio = document.createElement("audio")
         audio.classList.add("w-100");
         audio.setAttribute("controls", "controls")
         audio.src = cancion.preview_url;
 
+        //crear titulo
+        let titulo = document.createElement("h1")
+        titulo.classList.add("card-title")
+        titulo.textContent = cancion.name
+
+        let popularidad = document.createElement("p")
+        popularidad.classList.add("card-text")
+        popularidad.textContent = "popularidad " + "...." + cancion.popularity;
+
+
         //PADRES E HIJOS
-        tarjeta.appendChild(imagen)
-        tarjeta.appendChild(audio)
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
+        tarjeta.appendChild(imagen)
+        tarjeta.appendChild(tit)
+        tit.appendChild(titulo)
+        tit.appendChild(popularidad)
+        tit.appendChild(audio)
+
 
 
 
