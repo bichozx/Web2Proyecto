@@ -17,15 +17,14 @@ window.addEventListener('load', function() {
     ];
 
 
-    function cambio() {
+    setInterval(function() {
 
         const bg = imag[Math.floor(Math.random() * imag.length)];
         body.style.backgroundImage = bg;
+        console.log = bg;
 
-    }
 
-
-    setTimeout(cambio, 1000);
+    }, 5000);
 
 
 })
